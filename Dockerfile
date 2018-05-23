@@ -1,4 +1,4 @@
-FROM jenkins:latest
+FROM debian:stable
 
 USER root
 
