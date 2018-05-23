@@ -1,10 +1,6 @@
 {
-  "executionRoleArn": null,
   "containerDefinitions": [
     {
-      "dnsSearchDomains": null,
-      "logConfiguration": null,
-      "entryPoint": null,
       "portMappings": [
         {
           "hostPort": 8080,
@@ -22,60 +18,21 @@
           "containerPort": 8080
         }
       ],
-      "command": null,
-      "linuxParameters": null,
       "cpu": 0,
-      "environment": [],
-      "ulimits": null,
-      "dnsServers": null,
       "mountPoints": [
         {
-          "readOnly": null,
+          "readOnly": false,
           "containerPath": "/var/jenkins_home/",
           "sourceVolume": "homeDirectory"
         }
       ],
-      "workingDirectory": null,
-      "dockerSecurityOptions": null,
-      "memory": null,
       "memoryReservation": 64,
-      "volumesFrom": [],
       "image": "379561783016.dkr.ecr.us-east-1.amazonaws.com/jenkins",
-      "disableNetworking": null,
-      "healthCheck": null,
       "essential": true,
-      "links": null,
-      "hostname": null,
-      "extraHosts": null,
-      "user": null,
-      "readonlyRootFilesystem": null,
-      "dockerLabels": null,
-      "privileged": null,
       "name": "jenkins"
     }
   ],
-  "placementConstraints": [],
-  "memory": null,
-  "taskRoleArn": null,
-  "compatibilities": [
-    "EC2"
-  ],
   "family": "jenkins",
-  "requiresAttributes": [
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-    }
-  ],
-  "requiresCompatibilities": [
-    "EC2"
-  ],
-  "networkMode": null,
-  "cpu": null,
-  "revision": 10,
-  "status": "ACTIVE",
   "volumes": [
     {
       "name": "homeDirectory",
