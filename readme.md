@@ -1,4 +1,4 @@
 # Jenkins Docker Image
 ## Pushing Changes
-* `docker build -t archetypalsxe/jenkins:latest .`
-* `docker push archetypalsxe/jenkins:latest`
+* `docker build -t 379561783016.dkr.ecr.us-east-1.amazonaws.com/jenkins:latest .`
+* `docker push 379561783016.dkr.ecr.us-east-1.amazonaws.com/jenkins:latest`
